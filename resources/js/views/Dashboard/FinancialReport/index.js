@@ -47,11 +47,6 @@ function FinancialReport({ className, invoices, ...rest }) {
         thisYear: prices, 
         lastYear: taxes
     }
-
-    console.log(invoices);
-    console.log(labels);
-    console.log(prices);
-    console.log(taxes);
     
     return (
     <Card

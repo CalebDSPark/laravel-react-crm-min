@@ -14,7 +14,7 @@ const useStyles = makeStyles(() => ({
     }
 }));
 
-function Chart({data: dataProp,labels,className,...rest}) {
+function Chart({data:dataProp, labels, className, ...rest}) {
     const classes = useStyles();
     const theme = useTheme();
 
@@ -57,34 +57,34 @@ function Chart({data: dataProp,labels,className,...rest}) {
             xAxes: [
             {
                 gridLines: {
-                display: false,
-                drawBorder: false
+                    display: false,
+                    drawBorder: false
                 },
                 ticks: {
-                padding: 20,
-                fontColor: theme.palette.text.secondary
+                    padding: 20,
+                    fontColor: theme.palette.text.secondary
                 }
             }
             ],
             yAxes: [
             {
                 gridLines: {
-                borderDash: [2],
-                borderDashOffset: [2],
-                color: theme.palette.divider,
-                drawBorder: false,
-                zeroLineBorderDash: [2],
-                zeroLineBorderDashOffset: [2],
-                zeroLineColor: theme.palette.divider
+                    borderDash: [2],
+                    borderDashOffset: [2],
+                    color: theme.palette.divider,
+                    drawBorder: false,
+                    zeroLineBorderDash: [2],
+                    zeroLineBorderDashOffset: [2],
+                    zeroLineColor: theme.palette.divider
                 },
                 ticks: {
-                padding: 20,
-                fontColor: theme.palette.text.secondary,
-                beginAtZero: true,
-                min: 0,
-                maxTicksLimit: 5,
-                // callback: (value) => (value > 0 ? `${value}K` : value)
-                callback: (value) => (value)
+                    padding: 20,
+                    fontColor: theme.palette.text.secondary,
+                    beginAtZero: true,
+                    min: 0,
+                    maxTicksLimit: 5,
+                    // callback: (value) => (value > 0 ? `${value}K` : value)
+                    callback: (value) => (value)
                 }
             }
             ]
