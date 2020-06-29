@@ -39,7 +39,7 @@ npm install
 php artisan jwt:secret
 ```
 
-- Run an initail build
+- Run an initial build
 
 ```bash
 npm run dev
